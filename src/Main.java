@@ -11,7 +11,8 @@ public class Main {
       EmployeeBook employeeBook = new EmployeeBook(5);
       employeeBook.add("Ivanov Ivan", 25000, 1);
       employeeBook.add("Sergeev Sergey", 39000, 2);
-        employeeBook.add("Mishakov Misha", 78000, 4);
+      employeeBook.add("Mishakov Misha", 78000, 4);
+      employeeBook.add("Simonov Semen", 33000, 3);
 
         employeeBook.printAll(2);
         System.out.println(employeeBook.getSalarySum(2));
