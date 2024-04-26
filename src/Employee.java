@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Emploee {
+public class Employee {
 
     private static Long COUNTER = 1L;
     private final String fullName;
@@ -9,7 +9,7 @@ public class Emploee {
     private final Long id;
 
 
-    public Emploee(String fullName, int department, double salary) {
+    public Employee (String fullName, int department, double salary) {
         this.id = COUNTER++;
         this.fullName = fullName;
         this.department = department;
@@ -45,8 +45,8 @@ public class Emploee {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Emploee emploee = (Emploee) o;
-        return department == emploee.department && Double.compare(salary, emploee.salary) == 0 && Objects.equals(fullName, emploee.fullName) && Objects.equals(id, emploee.id);
+        Employee employee = (Employee) o;
+        return department == employee.department && Double.compare(salary, employee.salary) == 0 && Objects.equals(fullName, employee.fullName) && Objects.equals(id, employee.id);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class Emploee {
 
     @Override
     public String toString() {
-        return "Emploee{" +
+        return "Employee{" +
                 "fullName='" + fullName + '\'' +
                 ", department=" + department +
                 ", salary=" + salary +
